@@ -61,36 +61,38 @@
 
             <div class="contactForm-">
                 <h2>Envie uma mensagem</h2>
-                <div class="formBox-">
-                    <div class="inputBox- w50">
-                        <input type="text" required>
-                        <span>Nome</span>
-                    </div>
+                <form action="./enviar-email.php" method="POST">
+                    <div class="formBox-">
+                        <div class="inputBox- w50">
+                            <input name="nome" type="text" required>
+                            <span>Nome</span>
+                        </div>
 
-                    <div class="inputBox- w50">
-                        <input type="text" required>
-                        <span>Sobrenome</span>
-                    </div>
+                        <div class="inputBox- w50">
+                            <input name="sobrenome" type="text" required>
+                            <span>Sobrenome</span>
+                        </div>
 
-                    <div class="inputBox- w50">
-                        <input type="email" required>
-                        <span>E-mail</span>
-                    </div>
+                        <div class="inputBox- w50">
+                            <input name="email" type="email" required>
+                            <span>E-mail</span>
+                        </div>
 
-                    <div class="inputBox- w50">
-                        <input type="text" required>
-                        <span>Telefone</span>
-                    </div>
+                        <div class="inputBox- w50">
+                            <input name="telefone" type="text" required>
+                            <span>Telefone</span>
+                        </div>
 
-                    <div class="inputBox- w100">
-                        <textarea required></textarea>
-                        <span>Escreva sua mensagem aqui...</span>
-                    </div>
+                        <div class="inputBox- w100">
+                            <textarea name="mensagem" required></textarea>
+                            <span>Escreva sua mensagem aqui...</span>
+                        </div>
 
-                    <div class="inputBox- w100">
-                        <input type="submit" value="Enviar">
+                        <div class="inputBox- w100">
+                            <input type="submit" value="Enviar">
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
